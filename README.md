@@ -1,3 +1,3 @@
 # Detyra_1-SD
-Detyra e pare ne SD.
-Enkriptimi dhe dekriptimi permes Playfair Cipher ne Java.
+Detyra e parë në Siguria e të dhënave 2021.
+Enkriptimi dhe dekriptimi përmes Playfair Cipher në Java.
