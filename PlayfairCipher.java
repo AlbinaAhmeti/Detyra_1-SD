@@ -188,3 +188,33 @@ if(c == matrix[i][j].charAt(0))
 pt = new Point(i,j);  
 return pt;  
 }  
+
+private void keyMatrix(String[][] printMatrix)  
+{  
+System.out.println("Playfair Cipher Key Matrix: ");  
+System.out.println();  
+
+for(int i = 0; i < 5; i++)  
+{  
+  
+for(int j = 0; j < 5; j++)  
+{  
+
+System.out.print(printMatrix[i][j]+" ");  	 			
+}   							
+System.out.println();   					
+}  			 				
+System.out.println();  		 			
+}    				 			
+
+private void printResults(String encipher, String dec)  
+{  
+System.out.print("Encrypted Message: ");  
+
+System.out.println(encipher);   			
+System.out.println();  			
+System.out.print("Decrypted Message: ");  
+
+System.out.println(dec);  
+}  
+}  
