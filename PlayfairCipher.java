@@ -153,6 +153,26 @@ int row2 = (int) getPoint(b).getX();
 int column1 = (int) getPoint(a).getY();  
 int column2 = (int) getPoint(b).getY();  
 
+if(row1 == row2)  
+{  
+column1 = (column1 -1 +5) % 5;  
+column2 = (column2 -1 +5) % 5;  
+}  
+else if(column1 == column2)  
+{  
+row1 = (row1 -1 +5) % 5;  
+row2 = (row2 -1 +5) % 5;  
+}  
+else  
+{  
+
+int temp = column1;  
+column1 = column2;  
+column2 = temp;  
+}  
+decoded = decoded + matrix[row1][column1] + matrix[row2][column2];  
+}  
+
 return decoded;  
 }  
 
