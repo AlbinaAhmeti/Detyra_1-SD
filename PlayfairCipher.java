@@ -138,9 +138,10 @@ int temp = column1;
 column1 = column2;  
 column2 = temp;  
 }  
-
+encipher[i] = matrix[row1][column1] + "" + matrix[row2][column2]; 
 }
-
+return encipher;
+}
 private String decode(String out)  
 {  
 String decoded = "";  			 		
