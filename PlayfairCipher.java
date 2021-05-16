@@ -82,3 +82,10 @@ if(j == (length - 1) && in.length() / 2 == (length - 1))
 in = in + "X";  
 digraph[j] = in.charAt(2 * j) +""+ in.charAt(2 * j + 1);  
 }  
+
+String[] encDigraphs = new String[length];  
+encDigraphs = encodeDigraph(digraph);  
+for(int k = 0; k < length; k++)  
+out = out + encDigraphs[k];  
+return out;  
+}  
