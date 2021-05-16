@@ -33,6 +33,7 @@ this.keyMatrix(matrix);
 this.printResults(output,decodedOutput); 
 
 }
+
 private String parseString(Scanner sc)
 {  
     String parse = sc.nextLine();
@@ -78,12 +79,14 @@ return playfairMatrix;
 
 private String cipher(String in)
 {
+length=(int) in.length()/2+in.length()%2;
 
 for(int i=0;i<(length-1);i++)
 {
 if(in.charAt(2 * i) == in.charAt(2 * i + 1))  
 {  
 in = new StringBuffer(in).insert(2 * i + 1, 'X').toString();  
+length=(int) in.length()/2+in.length()%2;
 }  
 }  
 
@@ -104,3 +107,36 @@ for(int k = 0; k < length; k++)
 out = out + encDigraphs[k];  
 return out;  
 }  
+
+private String[] encodeDigraph(String di[])  
+{  
+String[] encipher = new String[length];  
+for(int i = 0; i < length; i++)  
+{  
+char a = di[i].charAt(0);  
+char b = di[i].charAt(1);  
+int row1 = (int) getPoint(a).getX();  
+int row2 = (int) getPoint(b).getX();  
+int column1 = (int) getPoint(a).getY();  
+int column2 = (int) getPoint(b).getY();  
+
+if(row1==row2)
+{
+columm1=(columm1+1)%5;
+columm2=(columm2+1)%5;
+}
+
+else if(column1 == column2)  
+{  
+row1 = (row1 + 1) % 5;  
+row2 = (row2 + 1) % 5;  
+}  
+
+else  
+{  
+int temp = column1;  
+column1 = column2;  
+column2 = temp;  
+}  
+
+}
