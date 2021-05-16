@@ -63,13 +63,22 @@ return playfairMatrix;
 
 private String cipher(String in)
 {
-length =(int) in.length()/2+in.length()%2;
 
 for(int i=0;i<(length-1);i++)
 {
 if(in.charAt(2 * i) == in.charAt(2 * i + 1))  
 {  
 in = new StringBuffer(in).insert(2 * i + 1, 'X').toString();  
-length = (int) in.length() / 2 + in.length() % 2;  
 }  
+}  
+
+String[] digraph = new String[length];  
+
+for(int j = 0; j < length ; j++)  
+{  
+
+if(j == (length - 1) && in.length() / 2 == (length - 1))  
+
+in = in + "X";  
+digraph[j] = in.charAt(2 * j) +""+ in.charAt(2 * j + 1);  
 }  
