@@ -1,4 +1,4 @@
-mport java.awt.Point;  
+import java.awt.Point;  
 import java.util.Scanner;  
 
 public class PlayfairCipher  
@@ -20,13 +20,17 @@ String key=parseString(sc);
 while(key.equals(""))
 key=parseString(sc);
 matrix=this.cipherMatrix(key);
-
+System.out.print("Enter the plaintext to be encipher: ");  
 
 String input=parseString(sc);
 while(input.equals(""))
 input=parseString(sc);
 
+String output = cipher(input); 
+String decodedOutput = decode(output); 
+
 this.keyMatrix(matrix); 
+this.printResults(output,decodedOutput); 
 
 }
 
