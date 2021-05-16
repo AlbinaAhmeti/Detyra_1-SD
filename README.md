@@ -11,12 +11,12 @@ Kjo do të thotë të trajtoj I dhe J si të njëjtën letër, përkatësisht.
 
 Kufizimet e  Playfair Cipher:
 
-Vetëm 25 alfabete mbështeten.
-Nuk mbështet karaktere numerike.
-Vetëm rastet e mëdha ose të vogla mbështeten.
-Ndalohet përdorimi i karaktereve speciale (të tilla si hapësira boshe, vija e re, pikësimet, etj.).
-Nuk mbështet gjuhë të tjera, përveç anglishtes.
-Kriptimi i skedarëve të medias gjithashtu nuk mbështetet.
+- Vetëm 25 alfabete mbështeten.
+- Nuk mbështet karaktere numerike.
+- Vetëm rastet e mëdha ose të vogla mbështeten.
+- Ndalohet përdorimi i karaktereve speciale (të tilla si hapësira boshe, vija e re, pikësimet, etj.).
+- Nuk mbështet gjuhë të tjera, përveç anglishtes.
+- Kriptimi i skedarëve të medias gjithashtu nuk mbështetet.
 
 
 Enkriptimi shkon sipas procesit ne vijim
