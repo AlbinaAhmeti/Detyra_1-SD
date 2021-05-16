@@ -1,5 +1,8 @@
-# Detyra_1-SD
+# Detyra_1-SD 
+# Gr.9 - Enkriptimi dhe dekriptimi përmes Playfair Cipher në Java.
+
 Detyra e parë në Siguria e të dhënave 2021.
+
 Enkriptimi dhe dekriptimi përmes Playfair Cipher në Java.
 
 Kriptimi Playfair
