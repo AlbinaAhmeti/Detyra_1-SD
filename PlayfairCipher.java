@@ -9,7 +9,9 @@ private int length = 0;
 private String [][] matrix;  
 public static void main(String args[])  
 {  
+
 PlayfairCipher pf = new PlayfairCipher();  
+
 }  
 
 private PlayfairCipher()
