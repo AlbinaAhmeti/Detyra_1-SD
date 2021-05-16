@@ -140,3 +140,28 @@ column2 = temp;
 }  
 
 }
+
+private String decode(String out)  
+{  
+String decoded = "";  			 		
+for(int i = 0; i < out.length() / 2; i++)  
+{  
+char a = out.charAt(2*i);  
+char b = out.charAt(2*i+1);  
+int row1 = (int) getPoint(a).getX();  
+int row2 = (int) getPoint(b).getX();  
+int column1 = (int) getPoint(a).getY();  
+int column2 = (int) getPoint(b).getY();  
+
+return decoded;  
+}  
+
+private Point getPoint(char c)  
+{  
+Point pt = new Point(0,0);  
+for(int i = 0; i < 5; i++)  
+for(int j = 0; j < 5; j++)  
+if(c == matrix[i][j].charAt(0))  
+pt = new Point(i,j);  
+return pt;  
+}  
