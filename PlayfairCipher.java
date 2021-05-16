@@ -33,14 +33,25 @@ this.keyMatrix(matrix);
 this.printResults(output,decodedOutput); 
 
 }
+private String parseString(Scanner sc)
+{  
+    String parse = sc.nextLine();
+    parse = parse.toUpperCase();  
+
+parse = parse.replaceAll("[^A-Z]", "");
+parse = parse.replace("J", "I"); 
+return parse;  
+}  
 
 private String[][] cipherMatrix(String key)
 {
+
 String[][] playfairMatrix=new String[5][5];
 String keyString=key+"ABCDEFGHIKLMNOPQRSTUVWXYZ"; 
 
 for(int i=0;i<5;i++)
 for(int j=0;j<5;j++)
+playfairMatrix[i][j] = "";  
 
 for(int k = 0; k < keyString.length(); k++)  
 {  
@@ -86,7 +97,7 @@ if(j == (length - 1) && in.length() / 2 == (length - 1))
 in = in + "X";  
 digraph[j] = in.charAt(2 * j) +""+ in.charAt(2 * j + 1);  
 }  
-
+String out = ""; 
 String[] encDigraphs = new String[length];  
 encDigraphs = encodeDigraph(digraph);  
 for(int k = 0; k < length; k++)  
