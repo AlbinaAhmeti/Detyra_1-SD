@@ -34,3 +34,62 @@ this.printResults(output,decodedOutput);
 
 }
 
+private String[][] cipherMatrix(String key)
+{
+String[][] playfairMatrix=new String[5][5];
+String keyString=key+"ABCDEFGHIKLMNOPQRSTUVWXYZ"; 
+
+for(int i=0;i<5;i++)
+for(int j=0;j<5;j++)
+
+for(int k = 0; k < keyString.length(); k++)  
+{  
+boolean repeat = false;  
+boolean used = false;  
+for(int i = 0; i < 5; i++)  
+{  
+for(int j = 0; j < 5; j++)  
+{  
+if(playfairMatrix[i][j].equals("" + keyString.charAt(k)))  
+{  
+repeat = true;  
+}  
+else if(playfairMatrix[i][j].equals("") && !repeat && !used)  
+{  
+playfairMatrix[i][j] = "" + keyString.charAt(k);  
+used = true;  
+}  
+}  
+}  
+}  
+return playfairMatrix;  
+}  
+
+private String cipher(String in)
+{
+
+for(int i=0;i<(length-1);i++)
+{
+if(in.charAt(2 * i) == in.charAt(2 * i + 1))  
+{  
+in = new StringBuffer(in).insert(2 * i + 1, 'X').toString();  
+}  
+}  
+
+String[] digraph = new String[length];  
+
+for(int j = 0; j < length ; j++)  
+{  
+
+if(j == (length - 1) && in.length() / 2 == (length - 1))  
+
+in = in + "X";  
+digraph[j] = in.charAt(2 * j) +""+ in.charAt(2 * j + 1);  
+}  
+
+String[] encDigraphs = new String[length];  
+encDigraphs = encodeDigraph(digraph);  
+for(int k = 0; k < length; k++)  
+out = out + encDigraphs[k];  
+return out;  
+}  
