@@ -1,9 +1,11 @@
-# Detyra_1-SD 
-# Gr.9 - Enkriptimi dhe dekriptimi përmes Playfair Cipher në Java.
+# Detyrat-SD 
 
-Detyra e parë në Siguria e të dhënave 2021.
+# Gr.9
 
-Enkriptimi dhe dekriptimi përmes Playfair Cipher në Java.
+
+# Detyra e parë në Siguria e të dhënave 2021.
+
+# Enkriptimi dhe dekriptimi përmes Playfair Cipher në Java.
 
 Kriptimi Playfair
 
@@ -28,3 +30,14 @@ Fillimisht largohen te gjithe karakteret qe nuk gjenden ne matricen e celesit. P
 1.	Nese gjinden ne rreshta te njejte atehere merret elementi pasues; nese eshte ne kolonen e fundit atehere merret elementi i pare.
 2.	Nese gjinden ne kolona te njejta atehere merret elementi i rreshtit pasues por i kolones se njejte; nese eshte ne rreshtin e fundit atehere merret elementi i rreshtit te pare te kolones se njejte.
 3.	Nese gjinden ne rreshta dhe kolona te ndryshme atehere merret elementi i rreshtit te njejte por i kolones se karakterit/shkronjes tjeter.
+
+
+
+# Detyra e dytë në Siguria e të dhënave 2021.
+
+# Komunikimi klient-server
+
+Protokoli - UDP
+Baza e shënimeve - JSON
+Çelësi publik - X.509
+Nënshkrimi - JWT
