@@ -1,6 +1,6 @@
 # Detyrat-SD 
 
-# Gr.9
+# GRUPI 9
 
 
 # Detyra e parë në Siguria e të dhënave 2021.
@@ -38,6 +38,9 @@ Fillimisht largohen te gjithe karakteret qe nuk gjenden ne matricen e celesit. P
 # Komunikimi klient-server
 
 Protokoli - UDP
+
 Baza e shënimeve - JSON
+
 Çelësi publik - X.509
+
 Nënshkrimi - JWT
